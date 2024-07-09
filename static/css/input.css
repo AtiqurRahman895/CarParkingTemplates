@@ -70,6 +70,9 @@
   .dashboardTable>thead{
     @apply border-b
   }
+  .dashboardTable>thead th{
+    @apply border
+  }
   .dashboardTable>tbody{
     @apply w-[90%]
   }
