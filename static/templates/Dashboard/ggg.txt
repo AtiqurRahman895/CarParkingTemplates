@@ -1,0 +1,71 @@
+        <div class="sidebar targetedSideBar targetedSideBarEffect h-[100svh] max-w-[280px] inline-flex flex-col justify-between p-[1rem] bg-custom-Orange items-center">
+            <a href="./index.html">
+                <img src="../library/logoAndImages/parking.png" alt="CAR PARKING" class=" w-[200px] ">
+            </a>
+            
+            <div class="sidebarOptions w-[100%] flex flex-col gap-4">
+                <div class="md:hidden hover:bg-Custom-Transparent rounded-md p-2">
+                    <img src="../library/svg/exit.svg" alt="Close" class="w-[2rem] sideBarClose sideBarTogglerEffect sideBarToggler">
+                    <img src="../library/svg/upload.svg" alt="Open" class="w-[2rem] sideBarOpen sideBarToggler">
+                </div>
+                <div class="eachSidebarOption flex justify-between hover:bg-Custom-Transparent rounded-md p-2">
+                    <div class="flex gap-2">
+                        <img src="../library/svg/person.svg" alt="Dashboard" class="w-[1rem]">
+                        <span>Dashboard</span>
+                    </div>
+                    <img src="../library/svg/arrow.svg" alt="GO" class="w-[1rem]">
+                </div>
+                <div class="eachSidebarOption flex justify-between hover:bg-Custom-Transparent rounded-md p-2">
+                    <div class="flex gap-2">
+                        <img src="../library/svg/person.svg" alt="Dashboard" class="w-[1rem]">
+                        <span>Dashboard</span>
+                    </div>
+                    <img src="../library/svg/arrow.svg" alt="GO" class="w-[1rem]">
+                </div>
+                <div class="eachSidebarOption flex justify-between hover:bg-Custom-Transparent rounded-md p-2">
+                    <div class="flex gap-2">
+                        <img src="../library/svg/person.svg" alt="Dashboard" class="w-[1rem]">
+                        <span>Dashboard</span>
+                    </div>
+                    <img src="../library/svg/arrow.svg" alt="GO" class="w-[1rem]">
+                </div>
+                <div class="eachSidebarOption flex justify-between hover:bg-Custom-Transparent rounded-md p-2">
+                    <div class="flex gap-2">
+                        <img src="../library/svg/person.svg" alt="Dashboard" class="w-[1rem]">
+                        <span>Dashboard</span>
+                    </div>
+                    <img src="../library/svg/arrow.svg" alt="GO" class="w-[1rem]">
+                </div>
+                <div class="eachSidebarOption flex justify-between hover:bg-Custom-Transparent rounded-md p-2">
+                    <div class="flex gap-2">
+                        <img src="../library/svg/person.svg" alt="Dashboard" class="w-[1rem]">
+                        <span>Dashboard</span>
+                    </div>
+                    <img src="../library/svg/arrow.svg" alt="GO" class="w-[1rem]">
+                </div>
+                <div class="eachSidebarOption flex justify-between hover:bg-Custom-Transparent rounded-md p-2">
+                    <div class="flex gap-2">
+                        <img src="../library/svg/person.svg" alt="Dashboard" class="w-[1rem]">
+                        <span>Dashboard</span>
+                    </div>
+                    <img src="../library/svg/arrow.svg" alt="GO" class="w-[1rem]">
+                </div>
+                <div class="eachSidebarOption flex justify-between hover:bg-Custom-Transparent rounded-md p-2">
+                    <div class="flex gap-2">
+                        <img src="../library/svg/person.svg" alt="Dashboard" class="w-[1rem]">
+                        <span>Dashboard</span>
+                    </div>
+                    <img src="../library/svg/arrow.svg" alt="GO" class="w-[1rem]">
+                </div>
+                <div class="eachSidebarOption flex justify-between hover:bg-Custom-Transparent rounded-md p-2">
+                    <div class="flex gap-2">
+                        <img src="../library/svg/person.svg" alt="Dashboard" class="w-[1rem]">
+                        <span>Dashboard</span>
+                    </div>
+                    <img src="../library/svg/arrow.svg" alt="GO" class="w-[1rem]">
+                </div>
+
+            </div>
+            <span class="text-[12px]">Copyright and Developed © 2024 
+                OS IT Solution Ltd</span>
+        </div>
