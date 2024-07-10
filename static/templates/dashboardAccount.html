@@ -43,7 +43,7 @@
 
           <a
             href="./socityDashboard.html"
-            class="eachSidebarOption flex justify-center lg:justify-between hover:bg-Custom-Transparent visited:bg-red-600 rounded-md p-2"
+            class="eachSidebarOption flex justify-center lg:justify-between hover:bg-Custom-Transparent rounded-md p-2"
           >
             <div class="flex gap-2">
               <img
@@ -449,10 +449,12 @@
 
         <!-- Content -->
 
+        <!-- first table -->
+
         <div class="flex flex-col gap-4 bg-card-color p-6">
           <div class="flex flex-wrap justify-between gap-4 p-0 items-center">
             <div class="">
-              <h3>Current Parking Status</h3>
+              <h3>Parking Slot Owners list</h3>
               <span class="text-green-600">All Members</span>
             </div>
 
@@ -485,14 +487,13 @@
                     <option value="all">All</option>
                     <option value="active">Active</option>
                     <option value="inactive">Inactive</option>
-                    <option value="upcoming">Upcoming</option>
                   </select>
                 </label>
               </fieldset>
             </div>
           </div>
 
-          <div class="overflow-auto max-h-[500px] flex">
+          <div class="overflow-auto max-h-[365px] flex">
             <table
               class="currentParkingStatusTable table-auto w-[100%] min-w-[900px] dashboardTable"
             >
@@ -502,11 +503,9 @@
                     Parking <br />
                     Slot Name
                   </th>
-                  <th>Vehicle Type</th>
-                  <th>Driver Phone</th>
-                  <th>Date</th>
-                  <th>Duration</th>
-                  <th>Amount</th>
+                  <th>Username</th>
+                  <th>Phone</th>
+                  <th>Total Earning</th>
                   <th>Status</th>
                 </tr>
               </thead>
@@ -514,219 +513,172 @@
               <tbody class="">
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Active</td>
                 </tr>
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Inactive</td>
                 </tr>
-                <tr>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td class="statusCell">------</td>
-                </tr>
+
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Upcoming</td>
                 </tr>
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Active</td>
                 </tr>
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Inactive</td>
                 </tr>
-                <tr>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td class="statusCell">------</td>
-                </tr>
+
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Upcoming</td>
                 </tr>
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Active</td>
                 </tr>
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Inactive</td>
                 </tr>
-                <tr>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td class="statusCell">------</td>
-                </tr>
+
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Upcoming</td>
                 </tr>
-                <tr>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td class="statusCell">------</td>
-                </tr>
+
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Upcoming</td>
                 </tr>
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Active</td>
                 </tr>
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Inactive</td>
                 </tr>
-                <tr>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td class="statusCell">------</td>
-                </tr>
+
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Upcoming</td>
                 </tr>
-                <tr>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td class="statusCell">------</td>
-                </tr>
+
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Upcoming</td>
                 </tr>
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Active</td>
                 </tr>
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
+                  <td>1500 BDT</td>
                   <td class="statusCell">Inactive</td>
                 </tr>
+
                 <tr>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td>------</td>
-                  <td class="statusCell">------</td>
+                  <td>A1</td>
+                  <td>Hyder</td>
+                  <td>0140####799</td>
+                  <td>1500 BDT</td>
+                  <td class="statusCell">Upcoming</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 2nd table -->
+
+        <div class="flex flex-col gap-4 bg-card-color p-6">
+          <div class="">
+            <h3>Parking Caretakers list</h3>
+            <span class="text-green-600">All Members</span>
+          </div>
+
+          <div class="overflow-auto flex">
+            <table
+              class="currentParkingStatusTable table-auto w-[100%] min-w-[900px] dashboardTable"
+            >
+              <thead class="sticky bg-custom-Orange top-0">
+                <tr>
+                  <th>
+                    Parking <br />
+                    Slot Name
+                  </th>
+                  <th>Username</th>
+                  <th>Phone</th>
+                  <th>NID</th>
+                </tr>
+              </thead>
+
+              <tbody class="">
+                <tr>
+                  <td>A1</td>
+                  <td>Hyder</td>
+                  <td>0140####799</td>
+                  <td class="bg-green-950"><a href="../library/logoAndImages/nid.pdf" download class="">Download</a></td>
+                  
                 </tr>
                 <tr>
                   <td>A1</td>
-                  <td>2 Wheeler</td>
+                  <td>Hyder</td>
                   <td>0140####799</td>
-                  <td>10-7-2024</td>
-                  <td>2:00pm-3:00pm</td>
-                  <td>400 BDT</td>
-                  <td class="statusCell">Upcoming</td>
+                  <td class="bg-green-950"><a href="../library/logoAndImages/nid.pdf" download class="">Download</a></td>
                 </tr>
               </tbody>
             </table>
