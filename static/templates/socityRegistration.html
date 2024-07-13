@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="../css/output.css" />
   </head>
   <body class="">
-    <section
-      class=" w-[100%] h-[100%] flex items-center my-10"
-    >
+    <section class="w-[100%] h-[100%] flex items-center my-10">
       <form
         action="#"
         method="post"
         class="flex flex-col space-y-7 items-center m-auto bg-custom-Orange py-5 px-12 rounded-xl"
       >
+        <img
+          src="../library/logoAndImages/car.png"
+          alt=""
+          class="w-[8rem] m-auto"
+        />
+        <h2>SIGN UP HERE AS A SOCITY</h2>
 
-      <img src="../library/logoAndImages/car.png" alt="" class="w-[8rem] m-auto">
-       <h2>SIGN UP HERE AS A SOCITY</h2>
-
-        <fieldset class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]">
+        <fieldset
+          class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]"
+        >
           <label for="username">
             <img
               src="../library/svg/person.svg"
@@ -33,11 +36,14 @@
             name="username"
             id="username"
             placeholder="USERNAME"
-            class="border-collapse bg-transparent outline-none " required
+            class="border-collapse bg-transparent outline-none"
+            required
           />
         </fieldset>
 
-        <fieldset class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]">
+        <fieldset
+          class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]"
+        >
           <label for="phone">
             <img
               src="../library/svg/phone.svg"
@@ -51,35 +57,40 @@
             name="Phone"
             id="Phone"
             placeholder="PHONE"
-            class="border-collapse bg-transparent outline-none " required
+            class="border-collapse bg-transparent outline-none"
+            required
           />
         </fieldset>
 
-        <fieldset class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]">
-            <label for="email">
-              <img
-                src="../library/svg/email.svg"
-                alt="Email"
-                class="w-[1.5rem]"
-              />
-            </label>
-  
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="EMAIL"
-              class="border-collapse bg-transparent outline-none " required
+        <fieldset
+          class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]"
+        >
+          <label for="email">
+            <img
+              src="../library/svg/email.svg"
+              alt="Email"
+              class="w-[1.5rem]"
             />
-          </fieldset>
+          </label>
 
-        <fieldset class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]">
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="EMAIL"
+            class="border-collapse bg-transparent outline-none"
+            required
+          />
+        </fieldset>
+
+        <fieldset
+          class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]"
+        >
           <label for="password">
             <img
               src="../library/svg/lock.svg"
               alt="Password"
               class="w-[1.3rem]"
-
             />
           </label>
 
@@ -88,11 +99,14 @@
             name="password"
             id="password"
             placeholder="PASSWORD"
-            class="border-collapse bg-transparent outline-none " required
+            class="border-collapse bg-transparent outline-none"
+            required
           />
         </fieldset>
 
-        <fieldset class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]">
+        <fieldset
+          class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]"
+        >
           <label for="confirmPassword">
             <img
               src="../library/svg/lock.svg"
@@ -106,12 +120,14 @@
             name="confirmPassword"
             id="confirmPassword"
             placeholder="CONFIRN PASSWORD"
-            class="border-collapse bg-transparent outline-none  required:"
+            class="border-collapse bg-transparent outline-none required:"
           />
         </fieldset>
 
         <div class="flex gap-2 items-center">
-          <div class="border border-white p-2 rounded-lg relative invalidStyle validStyle">
+          <div
+            class="border border-white p-2 rounded-lg relative invalidStyle validStyle"
+          >
             <input
               type="file"
               name="profilePicture"
@@ -130,8 +146,47 @@
               </span>
             </label>
           </div>
-
         </div>
+
+        <fieldset
+          class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]"
+        >
+          <label for="socity/houseName">
+            <img
+              src="../library/svg/home.svg"
+              alt="Socity/House Name"
+              class="w-[1.3rem]"
+            />
+          </label>
+
+          <input
+            type="password"
+            name="socity/houseName"
+            id="socity/houseName"
+            placeholder="SOCITY/HOUSE NAME"
+            class="border-collapse bg-transparent outline-none text-white required:"
+          />
+        </fieldset>
+
+        <fieldset
+          class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]"
+        >
+          <label for="address">
+            <img
+              src="../library/svg/home.svg"
+              alt="Address"
+              class="w-[1.3rem]"
+            />
+          </label>
+
+          <input
+            type="password"
+            name="address"
+            id="address"
+            placeholder="ADDRESS"
+            class="border-collapse bg-transparent outline-none text-white required:"
+          />
+        </fieldset>
 
         <button
           type="submit"
