@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/output.css" />
   </head>
   <body class="">
-    <main class="overflow-hidden">
+    <main class="">
       <nav
         class="h-[clamp(3.75rem,3.25rem+2.5vw,6.25rem)] w-[100%] bg-custom-Orange flex justify-center sticky top-0 z-40"
       >
@@ -24,20 +24,29 @@
             </a>
           </div>
           <div
-            class="hidden md:flex gap-x-[clamp(2rem,1.2rem+4vw,6rem)] justify-between"
+            class="hidden md:flex gap-x-[clamp(2rem,1.2rem+4vw,6rem)] justify-between items-center"
           >
             <p class="cursor-pointer registerOptionsToggler">Registration</p>
             <a href="./login.html">Login</a>
             <a href="#">About Us</a>
-            <p class="cursor-pointer">Change Language</p>
+            <span class="flex gap-1">
+              <p class="banglaLan cursor-pointer hover:scale-[1.1]">বাংলা</p>
+              /
+              <p class="englishLan cursor-pointer hover:scale-[1.1]">English</p>
+            </span>
           </div>
+
           <div
-            class="flex flex-col py-8 relative w-[50%] gap-5 items-center top-[8rem] bg-Custom-Transparent right-[-100%] justify-between duration-[1s] rounded-lg targetMenus md:hidden"
+            class="flex flex-col py-8 relative w-[50%] gap-5 items-center top-[8rem] bg-Custom-Transparent scale-x-0 origin-right right-[-8%] justify-between duration-[1s] rounded-lg targetMenus md:hidden"
           >
             <p class="cursor-pointer registerOptionsToggler">Registration</p>
             <a href="./login.html">Login</a>
             <a href="#">About Us</a>
-            <p class="cursor-pointer">Change Language</p>
+            <span class="flex gap-1">
+              <p class="banglaLan cursor-pointer hover:scale-[1.1]">বাংলা</p>
+              /
+              <p class="englishLan cursor-pointer hover:scale-[1.1]">English</p>
+            </span>
           </div>
           <img
             src="../library/svg/menu.svg"
@@ -48,81 +57,150 @@
       </nav>
 
       <section
-        class="registerOptions z-40 scale-y-0 origin-top duration-[1s] fixed w-[100%] h-[100%] bg-Custom-Transparent flex justify-center items-center"
+        class="registerOptions z-40 scale-y-0 origin-top duration-[1s] fixed rounded-t-xl bg-Custom-Transparent flex justify-center items-center left-[40%] top-[15%] md:top-[10%]"
       >
-        <div class="w-[450px] flex flex-col items-center space-y-5">
+        <!-- <div class=" flex flex-col items-center space-y-5">
           <img
             src="../library/svg/exit.svg"
             alt="Exit"
             class="w-[3rem] registerOptionsToggler cursor-pointer"
           />
-          <h2 class="">USER REGISTRATION</h2>
-          <div class="flex flex-col w-[100%]">
-            <div
-              class="userTypestoggler bg-custom-Orange flex justify-between border-b-[10px] rounded-t-xl p-[15px] cursor-pointer"
-            >
-              <h3 class="">SELECT USER</h3>
-              <img src="../library/svg/arrow.svg" alt="" class="w-[16px]" />
-            </div>
+          <h2 class="">USER REGISTRATION</h2> -->
+        <div class="flex flex-col w-[100%] overflow-hidden">
+          <div
+            class="userTypestoggler bg-custom-Orange flex justify-between border border-b-[10px] rounded-t-xl p-[15px] cursor-pointer"
+          >
+            <h3 class="">SELECT USER</h3>
+            <img src="../library/svg/arrow.svg" alt="" class="w-[16px]" />
+          </div>
 
-            <div
-              class="userTypes bg-custom-Orange flex flex-col scale-y-100 duration-[1s] origin-top"
+          <div
+            class="userTypes bg-custom-Orange flex flex-col scale-y-100 duration-[1s] origin-top"
+          >
+            <a href="./driverRegistration.html"><h3>DRIVER</h3></a>
+            <a href="./ownerRegistration.html"><h3>OWNER</h3></a>
+            <a href="./otpVarification.html"><h3>OTP VARIFICATION</h3></a>
+            <a href="./otpVarificationUnSuccessful.html"
+              ><h3>VARIFICATION UNSUCCESSFUL</h3></a
             >
-              <a href="./driverRegistration.html"><h3>DRIVER</h3></a>
-              <a href="./otpVarification.html"><h3>OTP VARIFICATION</h3></a>
-              <a href="./otpVarificationUnSuccessful.html"><h3>VARIFICATION UNSUCCESSFUL</h3></a>
-              <a href="./caretakerRegistration.html"><h3>CARETAKER</h3></a>
-              <a href="./socityRegistration.html"><h3>SOCITY</h3></a>
-            </div>
+            <a href="./caretakerRegistration.html"><h3>CARETAKER</h3></a>
+            <a href="./driverRegistration.html"><h3>COMMERCIAL</h3></a>
+            <a href="./socityRegistration.html"><h3>SOCITY</h3></a>
           </div>
         </div>
       </section>
 
       <section class="hero">
         <div
-          class="bg-[url('../library/logoAndImages/heroImage.jpg')] bg-cover bg-no-repeat h-[90svh] bg-center flex flex-col space-y-4 justify-center items-center"
+          class="heroWrapper bg-[url('../library/logoAndImages/heroImage.jpg')] bg-cover bg-no-repeat h-[80svh] bg-center flex flex-col justify-center gap-14 items-center"
         >
-          <fieldset class="bg-Custom-Transparent p-2 rounded-3xl">
-            <label for="searchedlocation" class="flex space-x-4">
-              <img
-                src="../library/svg/search.svg"
-                alt="search"
-                class="w-[1rem]"
-              />
-              <input
-                type="search"
-                name="searchedlocation"
-                id="searchedlocation"
-                class="bg-transparent outline-none"
-                placeholder="Search location.."
-              />
-            </label>
-          </fieldset>
-
-          <div class="flex space-x-5">
-            <a href="./availableLots.html" class="heroButton bg-green-600">
-              <span
-                >All Available <br /> Parking
-                Lots</span
+          <div class="userTypes flex flex-col items-center gap-4">
+            <h3>Register As</h3>
+            <div class="flex flex-wrap gap-2">
+              <a
+                href="./driverRegistration.html"
+                class="normalButton bg-custom-Orange"
+                >Driver</a
               >
-              <p class="text-[16px]">50</p></a
-            >
-
-            <a
-              href="./availableParkingLots.html"
-              class="heroButton bg-custom-Orange"
-            >
-              <span
-                >Available Parking <br />Lots in
-                Farmgate</span
+              <a
+                href="./driverRegistration.html"
+                class="normalButton bg-custom-Orange"
+                >Owner</a
               >
-              <p class="text-[16px]">10</p></a
-            >
+              <a
+                href="./driverRegistration.html"
+                class="normalButton bg-custom-Orange"
+                >Caretaker</a
+              >
+              <a
+                href="./driverRegistration.html"
+                class="normalButton bg-custom-Orange"
+                >Commercial</a
+              >
+              <a
+                href="./driverRegistration.html"
+                class="normalButton bg-custom-Orange"
+                >Socity</a
+              >
+            </div>
           </div>
+          <div class="flex flex-col space-y-4 justify-center items-center">
+            <div class="flex flex-wrap gap-3 justify-center">
+              <fieldset class="bg-Custom-Transparent p-2 rounded-xl">
+                <select
+                  name="parkingType"
+                  id="parkingType"
+                  class="bg-Custom-Transparent rounded-lg w-[200px] border-collapse outline-none"
+                >
+                  <option value="" selected disabled>
+                    Select Parking Type
+                  </option>
+                  <option value="commercial">Commercial</option>
+                  <option value="residential">Residential</option>
+                </select>
+              </fieldset>
 
-          <div class="heroButton bg-yellow-500">
-            <span>Available Parking Lots <br />in next 30 Minutes</span>
-            <p class="text-[16px]">7</p>
+              <fieldset class="bg-Custom-Transparent p-2 rounded-xl">
+                <label for="searchedlocation" class="flex space-x-4">
+                  <img
+                    src="../library/svg/search.svg"
+                    alt="search"
+                    class="w-[1rem]"
+                  />
+                  <select
+                    name="searchedlocation"
+                    id="searchedlocation"
+                    class="bg-Custom-Transparent rounded-lg w-[200px] border-collapse outline-none"
+                  >
+                    <option value="" selected disabled>
+                      Select Location Here
+                    </option>
+                    <option value="Farmgate">Farmgate</option>
+                    <option value="Uttara">Uttara</option>
+                    <option value="Dhanmondi">Farmgate</option>
+                    <option value="Mirpur-1">Farmgate</option>
+                    <option value="Malibagh">Farmgate</option>
+                  </select>
+                </label>
+              </fieldset>
+
+              <fieldset class="bg-Custom-Transparent p-2 rounded-xl">
+                <label for="parkingTime" class="space-x-2">
+                  <span>Parking Time</span>
+
+                  <input
+                    type="time"
+                    name="parkingTime"
+                    id="parkingTime"
+                    class="rounded-lg text-black w-[30px] md:w-auto border-collapse outline-none"
+                    placeholder="Parking Time"
+                  />
+                </label>
+              </fieldset>
+            </div>
+
+            <div class="flex space-x-5">
+              <a href="./availableLots.html" class="heroButton bg-green-600">
+                <span
+                  >All Available <br />
+                  Parking Lots</span
+                >
+                <p class="text-[16px]">50</p></a
+              >
+
+              <a
+                href="./availableParkingLots.html"
+                class="heroButton bg-custom-Orange"
+              >
+                <span>Available Parking <br />Lots in Farmgate</span>
+                <p class="text-[16px]">10</p></a
+              >
+            </div>
+
+            <div class="heroButton bg-yellow-500">
+              <span>Available Parking Lots <br />in next 30 Minutes</span>
+              <p class="text-[16px]">7</p>
+            </div>
           </div>
         </div>
       </section>
@@ -216,6 +294,48 @@
           >Copyright and Developed © 2024 OS IT Solution Ltd</span
         >
       </footer>
+      <seection class="fixed flex flex-col gap-4 bottom-[10%] left-[0.5rem]">
+        <a href="#" class=""
+          ><img
+            src="../library/svg/linkedIn.svg"
+            alt="LinkedIn"
+            class="w-[2.5rem]"
+        /></a>
+        <a href="#" class=""
+          ><img
+            src="../library/svg/facebook.svg"
+            alt="LinkedIn"
+            class="w-[2.5rem]"
+        /></a>
+        <a href="#" class=""
+          ><img
+            src="../library/svg/whatsappColor.svg"
+            alt="LinkedIn"
+            class="w-[2.5rem]"
+        /></a>
+        <a href="#" class=""
+          ><img
+            src="../library/svg/gamil.svg"
+            alt="LinkedIn"
+            class="w-[2.3rem]"
+        /></a>
+      </seection>
+
+      <section class="fixed flex flex-col gap-4 bottom-[10%] right-[0.5rem]">
+        <img
+          src="../library/svg/topArrow.svg"
+          alt="^"
+          class="w-[2rem] goToTop"
+        />
+      </section>
+
+      <!-- <section class="w-[100%] flex justify-center fixed bottom-[5%]">
+        <div class="w-[80%] divWrapperMaxWidth p-4 bg-custom-Orange flex justify-between rounded-md  items-center">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nam repellendus tempore.</p>
+          <img src="../library/svg/exit.svg" alt="Close" class="w-[2rem]">
+
+        </div>
+      </section> -->
     </main>
   </body>
 </html>

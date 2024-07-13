@@ -13,3 +13,8 @@ allRegisterOptionsToggler.forEach((eachRegisterOptionsToggler)=>{
 document.querySelector(`.userTypestoggler`).addEventListener(`click`,()=>{
     document.querySelector(`.userTypes`).classList.toggle(`userTypesAnimation`)
 })
+
+// scroll top 
+document.querySelector(`.goToTop`).addEventListener('click', e=>{
+    document.documentElement.scrollTop=1;
+})

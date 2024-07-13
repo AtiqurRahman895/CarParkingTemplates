@@ -12,8 +12,11 @@
   h3 {
     @apply text-xl;
   }
+  *{
+    @apply scroll-smooth
+  }
   body {
-    @apply text-white bg-[#242424] overflow-x-hidden;
+    @apply text-white bg-[#242424] overflow-x-hidden; 
   }
 }
 @layer utilities {
@@ -21,7 +24,7 @@
     @apply py-[15px] pl-[15px] border-b-[1px] hover:bg-gray-300 last:border-none;
   }
   .menusToggleAnimation {
-    @apply right-[-8%];
+    @apply scale-x-[1];
   }
   .userTypesAnimation {
     @apply scale-y-0;
