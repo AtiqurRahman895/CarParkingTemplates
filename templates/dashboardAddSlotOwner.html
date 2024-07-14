@@ -3,25 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard Add Parking Slot</title>
-    <script src="../javascript/dashboard.js" defer></script>
-    <link rel="stylesheet" href="../css/output.css" />
+    <title>Dashboard Add Slot Owner</title>
+    <script src="/static/javascript/dashboard.js" defer></script>
+    <link rel="stylesheet" href="/static/css/output.css" />
   </head>
 
   <body class="">
     <main class="flex gap-1 md:gap-4 max-w-[1500px] h-[100svh]">
+      <!-- sidebar -->
       <!-- sidebar -->
       <div
         class="sidebar duration-[1s] z-50 h-[100%] w-fit inline-flex flex-col gap-4 justify-between py-[1rem] px-[5px] lg:p-[1rem] bg-custom-Orange items-center"
       >
         <a href="./index.html">
           <img
-            src="../library/logoAndImages/parking.png"
+            src="/static/library/logoAndImages/parking.png"
             alt="CAR PARKING"
             class="hidden w-[200px] lg:block"
           />
           <img
-            src="../library/logoAndImages/car.png"
+            src="/static/library/logoAndImages/car.png"
             alt="Home"
             class="w-[4rem] lg:hidden"
           />
@@ -30,12 +31,12 @@
         <div class="sidebarOptions pb-10 lg:pb-0 flex flex-col gap-4">
           <div class="lg:hidden rounded-md p-2">
             <img
-              src="../library/svg/exit.svg"
+              src="/static/library/svg/exit.svg"
               alt="Close"
               class="w-[2rem]  m-auto sideBarCloser sideBarTogglerEffect sideBarToggler"
             />
             <img
-              src="../library/svg/open.svg"
+              src="/static/library/svg/open.svg"
               alt="Open"
               class="w-[2rem] m-auto sideBarOpener sideBarToggler"
             />
@@ -47,14 +48,14 @@
           >
             <div class="flex gap-2">
               <img
-                src="../library/svg/dashboard.svg"
+                src="/static/library/svg/dashboard.svg"
                 alt="Dashboard"
                 class="w-[1.5rem]"
               />
               <span class="targetedMenu duration-[1s] ">Dashboard</span>
             </div>
             <img
-              src="../library/svg/rightArrow.svg"
+              src="/static/library/svg/rightArrow.svg"
               alt="GO"
               class="w-[1rem] targetedMenu duration-[1s] "
             />
@@ -66,14 +67,14 @@
           >
             <div class="flex gap-2">
               <img
-                src="../library/svg/home.svg"
+                src="/static/library/svg/home.svg"
                 alt="Home"
                 class="w-[1.2rem]"
               />
               <span class="targetedMenu duration-[1s] ">Home</span>
             </div>
             <img
-              src="../library/svg/rightArrow.svg"
+              src="/static/library/svg/rightArrow.svg"
               alt="GO"
               class="w-[1rem] targetedMenu duration-[1s] "
             />
@@ -85,14 +86,14 @@
           >
             <div class="flex gap-2">
               <img
-                src="../library/svg/booking.svg"
+                src="/static/library/svg/booking.svg"
                 alt="Book"
                 class="w-[1rem]"
               />
               <span class="targetedMenu duration-[1s] ">Book Parking</span>
             </div>
             <img
-              src="../library/svg/rightArrow.svg"
+              src="/static/library/svg/rightArrow.svg"
               alt="GO"
               class="w-[1rem] targetedMenu duration-[1s] "
             />
@@ -104,14 +105,14 @@
           >
             <div class="flex gap-2">
               <img
-                src="../library/svg/person.svg"
+                src="/static/library/svg/person.svg"
                 alt="Add Slot Owner"
                 class="w-[1rem]"
               />
               <span class="targetedMenu duration-[1s] ">Add Slot Owner</span>
             </div>
             <img
-              src="../library/svg/rightArrow.svg"
+              src="/static/library/svg/rightArrow.svg"
               alt="GO"
               class="w-[1rem] targetedMenu duration-[1s] "
             />
@@ -123,14 +124,14 @@
           >
             <div class="flex gap-2">
               <img
-                src="../library/svg/add.svg"
+                src="/static/library/svg/add.svg"
                 alt="Add Slot"
                 class="w-[1rem]"
               />
               <span class="targetedMenu duration-[1s] ">Add Parking Slot</span>
             </div>
             <img
-              src="../library/svg/rightArrow.svg"
+              src="/static/library/svg/rightArrow.svg"
               alt="GO"
               class="w-[1rem] targetedMenu duration-[1s] "
             />
@@ -142,14 +143,14 @@
           >
             <div class="flex gap-2">
               <img
-                src="../library/svg/account.svg"
+                src="/static/library/svg/account.svg"
                 alt="Account"
                 class="w-[1rem]"
               />
               <span class="targetedMenu duration-[1s] ">Account</span>
             </div>
             <img
-              src="../library/svg/rightArrow.svg"
+              src="/static/library/svg/rightArrow.svg"
               alt="GO"
               class="w-[1rem] targetedMenu duration-[1s] "
             />
@@ -160,11 +161,11 @@
             class="eachSidebarOption flex justify-between hover:bg-Custom-Transparent rounded-md p-2"
           >
             <div class="flex gap-2">
-              <img src="../library/svg/map.svg" alt="Map" class="w-[1rem]" />
+              <img src="/static/library/svg/map.svg" alt="Map" class="w-[1rem]" />
               <span class="targetedMenu duration-[1s] ">Parking Map</span>
             </div>
             <img
-              src="../library/svg/rightArrow.svg"
+              src="/static/library/svg/rightArrow.svg"
               alt="GO"
               class="w-[1rem] targetedMenu duration-[1s] "
           /></a>
@@ -174,11 +175,11 @@
             class="eachSidebarOption flex justify-between hover:bg-Custom-Transparent rounded-md p-2"
           >
             <div class="flex gap-2">
-              <img src="../library/svg/cctv.svg" alt="CCTV" class="w-[1rem]" />
+              <img src="/static/library/svg/cctv.svg" alt="CCTV" class="w-[1rem]" />
               <span class="targetedMenu duration-[1s] ">CCTV</span>
             </div>
             <img
-              src="../library/svg/rightArrow.svg"
+              src="/static/library/svg/rightArrow.svg"
               alt="GO"
               class="w-[1rem] targetedMenu duration-[1s] "
           /></a>
@@ -188,11 +189,11 @@
             class="eachSidebarOption flex justify-between hover:bg-Custom-Transparent rounded-md p-2"
           >
             <div class="flex gap-2">
-              <img src="../library/svg/help.svg" alt="Help" class="w-[1rem]" />
+              <img src="/static/library/svg/help.svg" alt="Help" class="w-[1rem]" />
               <span class="targetedMenu duration-[1s] ">Help</span>
             </div>
             <img
-              src="../library/svg/rightArrow.svg"
+              src="/static/library/svg/rightArrow.svg"
               alt="GO"
               class="w-[1rem] targetedMenu duration-[1s] "
             />
@@ -213,13 +214,13 @@
             <h3 class="hidden md:block">Hello shakib1122 👋🏼</h3>
             <div class="inline-flex gap-6 items-center">
               <img
-                src="../library/svg/notification.svg"
+                src="/static/library/svg/notification.svg"
                 alt="Notifications"
                 class="w-[1.5rem]"
               />
               <a href="#">
                 <img
-                  src="../library/logoAndImages/profilePic.jpg"
+                  src="/static/library/logoAndImages/profilePic.jpg"
                   alt="Profile"
                   class="w-[2rem] rounded-full"
                 />
@@ -264,11 +265,11 @@
 
         <form action="#" class="flex flex-col gap-6">
           <label class="flex flex-col gap-2">
-            Parking Slot Name
+            Owner Username
             <input
               type="text"
-              name="slotName"
-              id="slotName"
+              name="username"
+              id="username"
               placeholder="Type here.."
               class="border-collapse outline-none max-w-[450px] p-2 rounded-md text-black"
               required
@@ -276,11 +277,11 @@
           </label>
 
           <label class="flex flex-col gap-2">
-            Parking Slot Owner Name
+            Owner Phone Number
             <input
               type="text"
-              name="slotOwner"
-              id="slotOwner"
+              name="phone"
+              id="phone"
               placeholder="Type here.."
               class="border-collapse outline-none max-w-[450px] p-2 rounded-md text-black"
               required
@@ -288,11 +289,11 @@
           </label>
 
           <label class="flex flex-col gap-2">
-            House / Society Name
+            Owner Email
             <input
-              type="text"
-              name="socityName"
-              id="socityName"
+              type="email"
+              name="email"
+              id="email"
               placeholder="Type here.."
               class="border-collapse outline-none max-w-[450px] p-2 rounded-md text-black"
               required
@@ -300,34 +301,62 @@
           </label>
 
           <label class="flex flex-col gap-2">
-            Parking Charge Category
-            <select
-              name="ChargeCategory"
-              id="ChargeCategory"
-              class="text-black border-collapse outline-none max-w-[450px] p-2 rounded-md"
+            Password
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Type here.."
+              class="border-collapse outline-none max-w-[450px] p-2 rounded-md text-black"
+              required
+            />
+          </label>
+
+          <label class="flex flex-col gap-2">
+            Confirm Password
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+              placeholder="Type here.."
+              class="border-collapse outline-none max-w-[450px] p-2 rounded-md text-black"
+              required
+            />
+          </label>
+
+          <div class="flex gap-2">
+            <div
+              class="border border-white p-2 rounded-lg relative invalidStyle validStyle"
             >
-              <option value="hourly">Hourly</option>
-              <option value="monthly">Monthly</option>
-            </select>
-          </label>
-
-          <label class="flex flex-col gap-2">
-            Enter Parking Charge *BDT
-            <input
-              type="text"
-              name="parkingCharge"
-              id="parkingCharge"
-              placeholder="Type here.."
-              class="border-collapse outline-none max-w-[450px] p-2 rounded-md text-black"
-              required
-            />
-          </label>
+              <input
+                type="file"
+                name="profilePicture"
+                id="profilePicture"
+                class="opacity-0 absolute"
+                required
+              />
+              <label
+                for="profilePicture"
+                class="flex flex-col items-center space-y-2"
+              >
+                <img
+                  src="/static/library/svg/upload.svg"
+                  alt=""
+                  class="w-[1.2rem]"
+                />
+                <span class="text-center text-[10px]">
+                  UPLOAD <br />
+                  PROFILE PICTURE
+                </span>
+              </label>
+            </div>
+          </div>
 
           <button
             type="submit"
             class="bg-custom-Orange border-collapse outline-none max-w-[200px] p-2 rounded-md hover:scale-[1.01]"
           >
-            Submit
+            Creat/Add
           </button>
         </form>
       </div>

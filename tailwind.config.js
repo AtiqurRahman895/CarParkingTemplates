@@ -1,6 +1,6 @@
 
 module.exports = {
-  content: ["./static/**/*.{html,js}"],
+  content: ["./**/**/*.{html,js}"],
   theme: {
     extend: {
       screens: {
