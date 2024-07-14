@@ -67,8 +67,14 @@
   .sideBarTogglerEffect{
     @apply hidden
   }
-  .targetedSideBarEffect{
-    @apply duration-[1s] translate-x-[-150%] 
+  .sideBarEffect{
+    @apply fixed 
+  }
+  .targetedMenu{
+    @apply scale-0 origin-left absolute lg:scale-[1] lg:static
+  }
+  .targetedMenuEffect{
+    @apply duration-[1s] scale-[1] static
   }
   .dashboardTable>thead{
     @apply border-b

@@ -1,8 +1,13 @@
 // socityDashboard's Sidebar
 const sideBarTogglers =document.querySelectorAll('.sideBarToggler')
+const targetedMenus=document.querySelectorAll('.targetedMenu')
 sideBarTogglers.forEach((eachSideBarToggler)=>{
     eachSideBarToggler.addEventListener('click',(e)=>{
-        document.querySelector('.targetedSideBar').classList.toggle('targetedSideBarEffect')
+      targetedMenus.forEach((eachMenu)=>{
+        eachMenu.classList.toggle('targetedMenuEffect')
+        document.querySelector('.sidebar').classList.toggle('sideBarEffect')
+      })
+        
 
         const allSideBarCLosers=document.querySelectorAll('.sideBarCloser')
         allSideBarCLosers.forEach((eachSideBarCloser)=>{
