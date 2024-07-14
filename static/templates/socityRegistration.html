@@ -3,20 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Driver Registration</title>
+    <title>Socity Registration</title>
+    <script src="/static/javascript/dashboard.js" defer></script>
     <script src="/static/javascript/index.js" defer></script>
     <link rel="stylesheet" href="/static/css/output.css" />
   </head>
   <body class="">
-
     <section class="w-[100%] h-[100%] flex items-center my-10">
       <form
         action="#"
         method="post"
         class="flex flex-col space-y-7 items-center m-auto bg-custom-Orange py-5 px-12 rounded-xl"
       >
-        <img src="/static/library/logoAndImages/car.png" alt="" class="w-[8rem] m-auto">
-        <h2>SIGN UP HERE AS A DRIVER</h2>
+        <img
+          src="/static/library/logoAndImages/car.png"
+          alt=""
+          class="w-[8rem] m-auto"
+        />
+        <h2 class="text-center">SIGN UP HERE AS A</h2>
+
+        <div class="flex gap-2">
+          <label for="commercial" class=" flex items-center gap-1">
+            <input type="radio" name="rigisterType" id="commercial" value="commercial"> Commercial
+          </label>
+
+          <label for="socity"  class=" flex items-center gap-1">
+            <input type="radio" name="rigisterType" id="socity" value="socity"> Socity
+          </label>
+          
+        </div>
 
         <fieldset
           class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]"
@@ -34,7 +49,7 @@
             name="username"
             id="username"
             placeholder="USERNAME"
-            class="border-collapse bg-transparent outline-none "
+            class="border-collapse bg-transparent outline-none"
             required
           />
         </fieldset>
@@ -55,60 +70,31 @@
             name="Phone"
             id="Phone"
             placeholder="PHONE"
-            class="border-collapse bg-transparent outline-none "
+            class="border-collapse bg-transparent outline-none"
             required
           />
         </fieldset>
 
-        <div class="w-[100%]">
-          <label for="vehicle">VEHICLE TYPE</label>
-          <div class="pl-8 flex space-x-9">
-            <label class="flex">
-              <input
-                type="radio"
-                name="vehicle"
-                id="vehicle"
-                value="car"
-                required
-              />
-              <img
-                src="/static/library/svg/car.svg"
-                alt="Car"
-                class="w-[4rem] ml-2"
-              />
-            </label>
+        <fieldset
+          class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]"
+        >
+          <label for="email">
+            <img
+              src="/static/library/svg/email.svg"
+              alt="Email"
+              class="w-[1.5rem]"
+            />
+          </label>
 
-            <label class="flex">
-              <input
-                type="radio"
-                name="vehicle"
-                id="vehicle"
-                value="three Wheeler"
-                required
-              />
-              <img
-                src="/static/library/svg/threeWheeler.svg"
-                alt="Three Wheeler"
-                class="w-[4rem] ml-2"
-              />
-            </label>
-
-            <label class="flex">
-              <input
-                type="radio"
-                name="vehicle"
-                id="vehicle"
-                value="motorcycle"
-                required
-              />
-              <img
-                src="/static/library/svg/motorcycle.svg"
-                alt="Motorcycle"
-                class="w-[3rem] ml-2"
-              />
-            </label>
-          </div>
-        </div>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="EMAIL"
+            class="border-collapse bg-transparent outline-none"
+            required
+          />
+        </fieldset>
 
         <fieldset
           class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]"
@@ -126,7 +112,7 @@
             name="password"
             id="password"
             placeholder="PASSWORD"
-            class="border-collapse bg-transparent outline-none "
+            class="border-collapse bg-transparent outline-none"
             required
           />
         </fieldset>
@@ -159,7 +145,7 @@
               type="file"
               name="profilePicture"
               id="profilePicture"
-              class="opacity-0 absolute"
+              class="invisible absolute"
               required
             />
             <label
@@ -173,47 +159,47 @@
               </span>
             </label>
           </div>
-
-          <div class="border border-white p-2 rounded-lg relative invalidStyle validStyle">
-            <input
-              type="file"
-              name="drivingLicence"
-              id="drivingLicence"
-              class="opacity-0 absolute"
-              required
-            />
-            <label
-              for="drivingLicence"
-              class="flex flex-col items-center space-y-2"
-            >
-              <img src="/static/library/svg/upload.svg" alt="" class="w-[1.2rem]" />
-              <span class="text-center text-[10px]">
-                UPLOAD <br />
-                DRIVING LICINCE
-              </span>
-            </label>
-          </div>
-
-          <div class="border border-white p-2 rounded-lg relative invalidStyle validStyle">
-            <input
-              type="file"
-              name="carRegistration"
-              id="carRegistration"
-              class="opacity-0 absolute"
-              required
-            />
-            <label
-              for="carRegistration"
-              class="flex flex-col items-center space-y-2"
-            >
-              <img src="/static/library/svg/upload.svg" alt="" class="w-[1.2rem]" />
-              <span class="text-center text-[10px]">
-                UPLOAD <br />
-                CAR REGISTRATION
-              </span>
-            </label>
-          </div>
         </div>
+
+        <fieldset
+          class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]"
+        >
+          <label for="socity/houseName">
+            <img
+              src="/static/library/svg/home.svg"
+              alt="Socity/House Name"
+              class="w-[1.3rem]"
+            />
+          </label>
+
+          <input
+            type="password"
+            name="socity/houseName"
+            id="socity/houseName"
+            placeholder="SOCITY/HOUSE NAME"
+            class="border-collapse bg-transparent outline-none text-white required:"
+          />
+        </fieldset>
+
+        <fieldset
+          class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]"
+        >
+          <label for="address">
+            <img
+              src="/static/library/svg/home.svg"
+              alt="Address"
+              class="w-[1.3rem]"
+            />
+          </label>
+
+          <input
+            type="password"
+            name="address"
+            id="address"
+            placeholder="ADDRESS"
+            class="border-collapse bg-transparent outline-none text-white required:"
+          />
+        </fieldset>
 
         <button
           type="submit"

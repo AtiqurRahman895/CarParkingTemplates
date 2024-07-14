@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Owner Registration</title>
+    <title>Caretaker Registration</title>
+    <script src="/static/javascript/dashboard.js" defer></script>
+    <script src="/static/javascript/index.js" defer></script>
     <link rel="stylesheet" href="/static/css/output.css" />
   </head>
   <body class="">
     <section
-      class="text-white w-[100%] h-[100%] flex items-center my-10"
+      class=" w-[100%] h-[100%] flex items-center my-10"
     >
       <form
         action="#"
@@ -17,9 +19,9 @@
       >
 
       <img src="/static/library/logoAndImages/car.png" alt="" class="w-[8rem] m-auto">
-       <h2>SIGN UP HERE AS A OWNER</h2>
+       <h3>SIGN UP HERE AS A CARETAKER</h3>
 
-        <fieldset class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]">
+        <fieldset class="border  border-white flex p-2 space-x-2 rounded-sm w-[100%]">
           <label for="username">
             <img
               src="/static/library/svg/person.svg"
@@ -33,7 +35,7 @@
             name="username"
             id="username"
             placeholder="USERNAME"
-            class="border-collapse bg-transparent outline-none text-white" required
+            class="border-collapse bg-transparent outline-none" required
           />
         </fieldset>
 
@@ -51,27 +53,9 @@
             name="Phone"
             id="Phone"
             placeholder="PHONE"
-            class="border-collapse bg-transparent outline-none text-white" required
+            class="border-collapse bg-transparent outline-none " required
           />
         </fieldset>
-
-        <fieldset class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]">
-            <label for="email">
-              <img
-                src="/static/library/svg/email.svg"
-                alt="Email"
-                class="w-[1.5rem]"
-              />
-            </label>
-  
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="EMAIL"
-              class="border-collapse bg-transparent outline-none text-white" required
-            />
-          </fieldset>
 
         <fieldset class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]">
           <label for="password">
@@ -88,7 +72,7 @@
             name="password"
             id="password"
             placeholder="PASSWORD"
-            class="border-collapse bg-transparent outline-none text-white" required
+            class="border-collapse bg-transparent outline-none " required
           />
         </fieldset>
 
@@ -106,11 +90,12 @@
             name="confirmPassword"
             id="confirmPassword"
             placeholder="CONFIRN PASSWORD"
-            class="border-collapse bg-transparent outline-none text-white required:"
+            class="border-collapse bg-transparent outline-none  required:"
           />
         </fieldset>
 
         <div class="flex gap-2 items-center">
+            
           <div class="border border-white p-2 rounded-lg relative invalidStyle validStyle">
             <input
               type="file"
@@ -131,43 +116,27 @@
             </label>
           </div>
 
+          <div class="border border-white p-2 rounded-lg relative invalidStyle validStyle">
+            <input
+              type="file"
+              name="nidCard"
+              id="nidCard"
+              class="opacity-0 absolute"
+              required
+            />
+            <label
+              for="nidCard"
+              class="flex flex-col items-center space-y-2"
+            >
+              <img src="/static/library/svg/upload.svg" alt="" class="w-[1.2rem]" />
+              <span class="text-center text-[10px]">
+                UPLOAD <br />
+                NID CARD
+              </span>
+            </label>
+          </div>
+
         </div>
-
-        <fieldset class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]">
-          <label for="socity/houseName">
-            <img
-              src="/static/library/svg/home.svg"
-              alt="Socity/House Name"
-              class="w-[1.3rem]"
-            />
-          </label>
-
-          <input
-            type="password"
-            name="socity/houseName"
-            id="socity/houseName"
-            placeholder="SOCITY/HOUSE NAME"
-            class="border-collapse bg-transparent outline-none text-white required:"
-          />
-        </fieldset>
-
-        <fieldset class="border border-white flex p-2 space-x-2 rounded-sm w-[100%]">
-          <label for="address">
-            <img
-              src="/static/library/svg/home.svg"
-              alt="Address"
-              class="w-[1.3rem]"
-            />
-          </label>
-
-          <input
-            type="password"
-            name="address"
-            id="address"
-            placeholder="ADDRESS"
-            class="border-collapse bg-transparent outline-none text-white required:"
-          />
-        </fieldset>
 
         <button
           type="submit"
