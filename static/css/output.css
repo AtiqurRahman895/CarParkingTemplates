@@ -1839,9 +1839,6 @@ video {
 .bg-\[url\(\'\/static\/library\/logoAndImages\/heroImage\.jpg\'\)\] {
   background-image: url('/static/library/logoAndImages/heroImage.jpg');
 }
-.bg-\[url\(\'\/library\/logoAndImages\/heroImage\.jpg\'\)\] {
-  background-image: url('/library/logoAndImages/heroImage.jpg');
-}
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
